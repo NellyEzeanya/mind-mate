@@ -2,6 +2,9 @@ import "../styles/register.css";
 import loginVec from "../assets/vec2.svg";
 
 export default function RegisterPage() {
+  const auth = localStorage.getItem("authToken");
+  if (auth) window.location.href = "/login";
+
   const registerUser = (e) => {
     e.preventDefault();
     const data = {
