@@ -1,0 +1,76 @@
+.App {
+  display: flex;
+  flex-grow: 1;
+  height: 100vh;
+}
+
+.App .sidebar {
+  width: 280px;
+  box-shadow: 3px -2px 5px -2px rgba(176, 160, 160, 0.75);
+  -webkit-box-shadow: 3px -2px 5px -2px rgba(176, 160, 160, 0.75);
+  -moz-box-shadow: 3px -2px 5px -2px rgba(176, 160, 160, 0.75);
+}
+
+.App .sidebar .logo {
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.App .sidebar .logo p {
+  font-size: 1.2rem;
+  color: purple;
+  font-weight: 400;
+}
+
+.App .sidebar ul {
+  width: 100%;
+  list-style: none;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
+.App .sidebar ul li {
+  padding: 1rem 2.5rem;
+  width: 100%;
+  color: rgb(188, 188, 188);
+}
+
+.App .sidebar ul li svg {
+  width: 25px;
+}
+
+.App .sidebar ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.App .logout-btn {
+  display: block;
+  width: 100%;
+  padding: 4.5rem 2.5rem;
+  text-align: center;
+}
+
+.App .sidebar .logout-btn button {
+  color: red;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  padding-left: 0.3rem;
+}
+
+.App .sidebar .logout-btn button img {
+  width: 18px;
+}
+
+.App main {
+  flex-grow: 1;
+}
