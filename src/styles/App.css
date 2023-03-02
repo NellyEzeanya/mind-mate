@@ -74,3 +74,135 @@
 .App main {
   flex-grow: 1;
 }
+
+.App main header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.App aside {
+  width: 290px;
+  padding: 0.5rem;
+  /* box-shadow: -2px 0px 5px 0px rgba(219, 209, 209, 0.75);
+  -webkit-box-shadow: -2px 0px 5px 0px rgba(219, 209, 209, 0.75);
+  -moz-box-shadow: -2px 0px 5px 0px rgba(219, 209, 209, 0.75); */
+}
+
+.App aside h2 {
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.App .techniques {
+  display: grid;
+  gap: 7px;
+}
+
+.App .techniques a {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 0.25rem 0;
+  max-width: 220px;
+}
+
+.App .techniques a img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+
+.App .techniques a span {
+  font-size: 0.85rem;
+}
+
+.App .mainContent {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 56px);
+}
+
+.App .mainContent > div {
+  flex-grow: 1;
+  padding: 0 1rem;
+  overflow-y: auto;
+  /* scrollbar-width: none; */
+}
+/* .App .mainContent > div::-webkit-scrollbar,
+.App .mainContent > div::-moz-scrollbar,
+.App .mainContent > div::-ms-scrollbar {
+  display: none;
+  width: 0px;
+} */
+
+.App article.title p {
+  font-size: 1.2rem;
+  color: #555555;
+}
+.App article.title span {
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+.App article.title > div {
+  box-shadow: 0px 0px 5px 0px rgba(102, 102, 102, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(102, 102, 102, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(102, 102, 102, 0.75);
+  margin: 1.3rem 0 1rem;
+  padding: 0.9rem 1.5rem;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App article.title div p {
+  max-width: 340px;
+}
+
+.App article.title div img {
+  width: 250px;
+  height: 150px;
+  border-radius: 0.4rem;
+}
+
+.App article.mood-tracker {
+  padding: 1rem 0.5px;
+}
+
+.App article.mood-tracker .mood-tracker-card {
+  box-shadow: 0px -4px 16px rgba(0, 0, 0, 0.08);
+  padding: 0.6rem;
+}
+
+.App article.mood-tracker .mood-tracker-card p {
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.App article.mood-tracker .mood-tracker-card .flex-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 5px;
+}
+
+.App article.mood-tracker .mood-tracker-card .flex-card .num {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App article.mood-tracker .mood-tracker-card .flex-card .txt {
+  text-align: center;
+  display: block;
+  font-size: 13px;
+}
