@@ -1,0 +1,150 @@
+.Chat {
+  display: flex;
+  flex-grow: 1;
+  height: 100vh;
+}
+
+.Chat .sidebar {
+  min-width: 300px !important;
+  box-shadow: 3px -2px 5px -2px rgba(176, 160, 160, 0.75);
+  -webkit-box-shadow: 3px -2px 5px -2px rgba(176, 160, 160, 0.75);
+  -moz-box-shadow: 3px -2px 5px -2px rgba(176, 160, 160, 0.75);
+}
+
+.Chat .sidebar .logo {
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.Chat .sidebar .logo p {
+  font-size: 1.2rem;
+  color: purple;
+  font-weight: 400;
+}
+
+.Chat .sidebar ul {
+  width: 100%;
+  list-style: none;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
+.Chat .sidebar ul li {
+  padding: 1rem 2.5rem;
+  width: 100%;
+  color: rgb(188, 188, 188);
+}
+
+.Chat .sidebar ul li svg {
+  width: 25px;
+}
+
+.Chat .sidebar ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Chat .logout-btn {
+  display: block;
+  width: 100%;
+  padding: 4.5rem 2.5rem;
+  text-align: center;
+}
+
+.Chat .sidebar .logout-btn button {
+  color: red;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  padding-left: 0.3rem;
+}
+
+.Chat .sidebar .logout-btn button img {
+  width: 18px;
+}
+
+.Chat main {
+  flex-grow: 1;
+  background: #dfd2e5;
+  display: flex;
+  flex-direction: column;
+}
+
+.Chat main header {
+  padding: 1.5rem 1rem;
+}
+
+.Chat main header .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  color: #555555;
+  font-weight: lighter;
+}
+
+.Chat main header .flex h2 {
+  font-weight: lighter;
+}
+
+.Chat main .entry {
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.Chat main .entry .inp {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid #555555;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  flex-grow: 1;
+}
+
+.Chat main .entry .inp input {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+}
+
+.Chat main .entry .send {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.Chat main section.chats {
+  flex-grow: 1;
+  /* background-color: white; */
+  overflow: auto;
+}
+
+.Chat main section.chats > article {
+  padding: 1.5rem 1rem;
+}
+
+.Chat main section.chats .message {
+  background: #5f1e7e;
+  color: white;
+}
+
+.Chat main section.chats .response {
+  color: #5f1e7e;
+  background: white;
+  display: flex;
+  gap: 10px;
+}

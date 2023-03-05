@@ -32,7 +32,7 @@ function App() {
             </a>
           </li>
           <li>
-            <a href="/">
+            <a href="/chat">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -51,7 +51,7 @@ function App() {
             </a>
           </li>
           <li>
-            <a href="/">
+            <a href="/community">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -70,7 +70,7 @@ function App() {
             </a>
           </li>
           <li>
-            <a href="/">
+            <a href="/profile">
               <svg
                 fill="none"
                 stroke="currentColor"
