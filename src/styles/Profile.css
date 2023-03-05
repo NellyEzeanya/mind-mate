@@ -1,0 +1,151 @@
+.Profile {
+  display: flex;
+  flex-grow: 1;
+  height: 100vh;
+}
+
+.Profile .sidebar {
+  width: 280px;
+  box-shadow: 3px -2px 5px -2px rgba(176, 160, 160, 0.75);
+  -webkit-box-shadow: 3px -2px 5px -2px rgba(176, 160, 160, 0.75);
+  -moz-box-shadow: 3px -2px 5px -2px rgba(176, 160, 160, 0.75);
+}
+
+.Profile .sidebar .logo {
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.Profile .sidebar .logo p {
+  font-size: 1.2rem;
+  color: purple;
+  font-weight: 400;
+}
+
+.Profile .sidebar ul {
+  width: 100%;
+  list-style: none;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
+.Profile .sidebar ul li {
+  padding: 1rem 2.5rem;
+  width: 100%;
+  color: rgb(188, 188, 188);
+}
+
+.Profile .sidebar ul li svg {
+  width: 25px;
+}
+
+.Profile .sidebar ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Profile .logout-btn {
+  display: block;
+  width: 100%;
+  padding: 4.5rem 2.5rem;
+  text-align: center;
+}
+
+.Profile .sidebar .logout-btn button {
+  color: red;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  padding-left: 0.3rem;
+}
+
+.Profile .sidebar .logout-btn button img {
+  width: 18px;
+}
+
+.Profile main {
+  flex-grow: 1;
+}
+
+.Profile main header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.Profile aside {
+  width: 290px;
+  padding: 0.5rem;
+}
+
+.Profile aside h2 {
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.Profile main header {
+  background: #cab4d4;
+  color: white;
+  padding: 1.5rem 2.5rem;
+}
+
+.Profile main header img {
+  width: 210px;
+  height: 210px;
+}
+
+.Profile main header h2 {
+  font-size: 3rem;
+}
+
+.Profile main header .detail {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.Profile main header .detail button {
+  all: unset;
+  background-color: #fefada;
+  color: #d6c3c3;
+  border-radius: 14px;
+  padding: 0.8rem 1.5rem;
+}
+
+.Profile main header p {
+  font-size: 1.5rem;
+}
+
+.Profile main section {
+  padding: 1rem 1.5rem;
+}
+
+.Profile main section .options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.Profile main section .options p,
+.Profile main section .options div {
+  font-size: 1.6rem;
+  color: #555555;
+}
+
+.Profile main section .options select {
+  all: unset;
+  padding: 1rem;
+  background: #f7f7f7;
+}

@@ -6,12 +6,27 @@ import "./styles/index.css";
 import ErrorPage from "./pages/ErrorPage";
 import LoginPage from "./pages/Login";
 import RegisterPage from "./pages/Register";
+import ChatPage from "./pages/ChatPage";
+import CommunityPage from "./pages/CommunityPage";
+import ProfilePage from "./pages/ProfilePage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
+  },
+  {
+    path: "/community",
+    element: <CommunityPage />,
+  },
+  {
+    path: "/chat",
+    element: <ChatPage />,
+  },
+  {
+    path: "/profile",
+    element: <ProfilePage />,
   },
   {
     path: "/login",
