@@ -12,7 +12,7 @@ function ProfilePage() {
         </div>
         <ul>
           <li>
-            <a href="/">
+            <a href="/app">
               <svg
                 fill="none"
                 stroke="currentColor"
