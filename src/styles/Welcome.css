@@ -1,0 +1,55 @@
+.Welcome {
+  padding: 0 1rem;
+}
+
+.Welcome .top {
+  background: #9469a9;
+  color: white;
+  padding: 6rem 1rem 3.5rem;
+  border-bottom-left-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.Welcome .top .logo {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.Welcome .top .logo h2 {
+  font-size: 2.5rem;
+}
+
+.Welcome .top p {
+  font-size: 1.7rem;
+}
+
+.Welcome main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+  padding: 2.5rem 0;
+}
+
+.Welcome main a.btn {
+  background: #5f1e7e;
+  color: white;
+  padding: 6px 4rem;
+  display: block;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.Welcome main a.underline {
+  text-decoration: underline;
+}

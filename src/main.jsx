@@ -9,10 +9,15 @@ import RegisterPage from "./pages/Register";
 import ChatPage from "./pages/ChatPage";
 import CommunityPage from "./pages/CommunityPage";
 import ProfilePage from "./pages/ProfilePage";
+import WelcomePage from "./pages/Welcome";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <WelcomePage />,
+  },
+  {
+    path: "/app",
     element: <App />,
     errorElement: <ErrorPage />,
   },
