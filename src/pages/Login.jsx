@@ -3,7 +3,7 @@ import loginVec from "../assets/login-vec.svg";
 
 export default function LoginPage() {
   const auth = localStorage.getItem("authToken");
-  if (auth) window.location.href = "/login";
+  if (auth) window.location.href = "/app";
 
   const loginUser = (e) => {
     e.preventDefault();
