@@ -17,7 +17,7 @@ function WelcomePage() {
           Log In
         </a>
         <p>
-          Don’t have an account?{" "}
+          Don&apos;t have an account?{" "}
           <a href="/register" className="underline">
             SIGN UP
           </a>
