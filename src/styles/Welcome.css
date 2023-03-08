@@ -1,5 +1,6 @@
 .Welcome {
   padding: 0 1rem;
+  text-align: center;
 }
 
 .Welcome .top {
@@ -52,4 +53,10 @@
 
 .Welcome main a.underline {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+  .Welcome .top .logo {
+    display: block;
+  }
 }
