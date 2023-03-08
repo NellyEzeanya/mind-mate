@@ -80,6 +80,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
+  gap: 10px;
 }
 
 .App aside {
@@ -156,6 +157,7 @@
   padding: 0.9rem 1.5rem;
   border-radius: 4px;
   display: flex;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
   align-items: center;
 }
@@ -205,4 +207,62 @@
   text-align: center;
   display: block;
   font-size: 13px;
+}
+
+@media screen and (max-width: 900px) {
+  .App aside {
+    width: 100%;
+  }
+  .App aside .techniques {
+    display: flex;
+    gap: 1.5rem;
+    /* background-color: red; */
+    overflow-x: scroll;
+    scrollbar-width: 0px;
+  }
+
+  .App aside .techniques::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+  .App aside .techniques a {
+    display: block;
+    text-align: center;
+  }
+
+  .App aside .techniques a img {
+    display: block;
+    margin: 0px auto 5px;
+  }
+
+  .App article.mood-tracker {
+    display: none;
+  }
+
+  .App .mainContent {
+    display: block;
+    overflow-y: auto;
+  }
+
+  .App .mainContent article {
+    max-width: 310px;
+  }
+
+  .App article.title > div {
+    padding: 10px;
+    gap: 10px !important;
+  }
+
+  .App article.title > div p {
+    font-size: 1rem;
+    margin: 0 0 10px;
+  }
+
+  .App article.title > div img {
+    width: 100px;
+    height: 90px;
+    object-fit: cover;
+    margin: 5px auto;
+  }
 }
