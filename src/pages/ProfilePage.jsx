@@ -1,9 +1,19 @@
+import { useEffect, useState } from "react";
 import Sidebar from "../components/Sidebar";
 import "../styles/Profile.css";
 
 function ProfilePage() {
-  const auth = localStorage.getItem("authToken");
-  if (!auth) window.location.href = "/login";
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const auth = localStorage.getItem("authToken");
+    if (!auth) window.location.href = "/login";
+    else setLoading(false);
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
   return (
     <div className="Profile">
       <Sidebar />

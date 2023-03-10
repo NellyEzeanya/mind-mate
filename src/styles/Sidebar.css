@@ -1,59 +1,53 @@
-.Custom {
-  display: flex;
-  flex-grow: 1;
-  height: 100vh;
-}
-
-.Custom .sidebar {
+.sidebar {
   width: 280px;
   box-shadow: 3px -2px 5px -2px rgba(176, 160, 160, 0.75);
   -webkit-box-shadow: 3px -2px 5px -2px rgba(176, 160, 160, 0.75);
   -moz-box-shadow: 3px -2px 5px -2px rgba(176, 160, 160, 0.75);
 }
 
-.Custom .sidebar .logo {
+.sidebar .logo {
   width: 100%;
   text-align: center;
   padding: 1.5rem 0;
 }
 
-.Custom .sidebar .logo p {
+.sidebar .logo p {
   font-size: 1.2rem;
   color: purple;
   font-weight: 400;
 }
 
-.Custom .sidebar ul {
+.sidebar ul {
   width: 100%;
   list-style: none;
   margin-top: 1.5rem;
   font-size: 1rem;
 }
 
-.Custom .sidebar ul li {
+.sidebar ul li {
   padding: 1rem 2.5rem;
   width: 100%;
   color: rgb(188, 188, 188);
 }
 
-.Custom .sidebar ul li svg {
+.sidebar ul li svg {
   width: 25px;
 }
 
-.Custom .sidebar ul li a {
+.sidebar ul li a {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.Custom .logout-btn {
+.logout-btn {
   display: block;
   width: 100%;
   padding: 4.5rem 2.5rem;
   text-align: center;
 }
 
-.Custom .sidebar .logout-btn button {
+.sidebar .logout-btn button {
   color: red;
   background: none;
   outline: none;
@@ -67,17 +61,17 @@
   padding-left: 0.3rem;
 }
 
-.Custom .sidebar .logout-btn button img {
+.sidebar .logout-btn button img {
   width: 18px;
 }
 
 @media screen and (max-width: 820px) {
-  .Custom .logo,
-  .Custom div.logout-btn {
+  .sidebar .logo,
+  .sidebar div.logout-btn {
     display: none;
   }
 
-  .Custom .sidebar {
+  .sidebar {
     position: fixed;
     bottom: 0;
     right: 0;
@@ -86,18 +80,18 @@
     min-width: 100vw;
   }
 
-  .Custom .sidebar ul {
+  .sidebar ul {
     display: flex;
     width: 100vw;
     padding: 0;
     margin-top: 0 !important;
   }
 
-  .Custom .sidebar ul li {
+  .sidebar ul li {
     padding: 10px !important;
   }
 
-  .Custom .sidebar ul li a {
+  .sidebar ul li a {
     flex-direction: column;
     gap: 2px !important;
     padding: 0 !important;

@@ -114,6 +114,11 @@
   border-radius: 8px;
 }
 
+.login__page .main .other {
+  text-align: center;
+  margin-top: 15px;
+}
+
 /* Media queries */
 @media screen and (max-width: 1000px) {
   .login__page > div {
