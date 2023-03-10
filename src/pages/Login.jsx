@@ -36,7 +36,7 @@ export default function LoginPage() {
           localStorage.setItem("authToken", result.token);
           localStorage.setItem("userData", JSON.stringify(result.data));
           // redirect to home
-          window.location.href = "/";
+          window.location.href = "/app";
         }
         console.log(result);
       })
@@ -97,7 +97,7 @@ export default function LoginPage() {
                 </svg>
               </span>
               <input
-                type="text"
+                type="password"
                 name="password"
                 id="password"
                 placeholder="Password"
@@ -107,6 +107,9 @@ export default function LoginPage() {
           </fieldset>
           <button type="submit">Log in</button>
         </form>
+        <p className="other">
+          Don&apos;t have an account ? <a href="/register">Sign up</a>
+        </p>
       </div>
     </div>
   );

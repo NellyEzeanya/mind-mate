@@ -1,11 +1,20 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Sidebar from "../components/Sidebar";
 import "../styles/Chat.css";
 
 function ChatPage() {
   const chatsRef = useRef();
-  const auth = localStorage.getItem("authToken");
-  if (!auth) window.location.href = "/login";
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const auth = localStorage.getItem("authToken");
+    if (!auth) window.location.href = "/login";
+    else setLoading(false);
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   async function sendMessage(e) {
     e.preventDefault();

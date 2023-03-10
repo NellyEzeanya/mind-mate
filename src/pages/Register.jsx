@@ -139,6 +139,9 @@ export default function RegisterPage() {
           </fieldset>
           <button type="submit">Sign up</button>
         </form>
+        <p className="other">
+          Already have an account ? <a href="/login">Login</a>
+        </p>
       </div>
     </div>
   );
